@@ -1,0 +1,59 @@
+.example {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.example .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.example .circle:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.33);
+}
+
+.example .circle:nth-child(2) {
+    background-color: rgba(0, 0, 255, 0.33);
+}
+
+.example .circle:nth-child(3) {
+    background-color: rgba(0, 255, 0, 0.33);
+}
+
+
+#example1 .circle:nth-child(1) {
+    position: relative;
+    left: 75px;
+    top: 35px;
+}
+
+#example1 .circle:nth-child(2) {
+    position: relative;
+    left: 55px;
+    top: 20px;
+}
+
+#example1 .circle:nth-child(3) {
+    position: relative;
+    left: 95px;
+    top: -32px;
+}
+
+
+#example2 .circle:nth-child(1) {
+    transform: translate(75px, 35px);
+}
+
+#example2 .circle:nth-child(2) {
+    transform: translate(55px, 20px);
+}
+
+#example2 .circle:nth-child(3) {
+    transform: translate(95px, -32px);
+}
