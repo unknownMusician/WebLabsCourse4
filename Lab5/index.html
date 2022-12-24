@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovchynnikov S.D. IA-91</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="task1">
+        <form action="">
+            <div class="form-container">
+                <div class="field">
+                    <div class="title">
+                        ПІБ
+                    </div>
+                    <input type="text", name="name", placeholder="ТТТТТТ Т.Т.", pattern="[a-zA-Z]+ [a-zA-Z]\.[a-zA-Z]\.", title="ТТТТТТ Т.Т.", required/>
+                </div>
+                <div class="field">
+                    <div class="title">
+                        Факультет
+                    </div>
+                    <input type="text", name="faculty", placeholder="ТТТТ", pattern="[a-zA-Z]{3,5}", title="ТТТТ", required/>
+                </div>
+                <div class="field">
+                    <div class="title">
+                        Дата народження
+                    </div>
+                    <input type="text", name="birth", placeholder="ЧЧ.ЧЧ.ЧЧЧЧ", pattern="\d{2}\.\d{2}\.\d{4}", title="ЧЧ.ЧЧ.ЧЧЧЧ", required/>
+                </div>
+                <div class="field">
+                    <div class="title">
+                        Адреса
+                    </div>
+                    <input type="text", name="address", placeholder="м. ТТТТТТ", pattern="м\. [a-zA-Z]+", title="м. ТТТТТТ", required/>
+                </div>
+                <div class="field">
+                    <div class="title">
+                        e-mail
+                    </div>
+                    <input type="text", name="email", placeholder="тттттт@ттттт.com", pattern="[a-zA-Z]+@[a-zA-Z]+\.com", title="тттттт@ттттт.com", required/>
+                </div>
+                <div class="field">
+                    <input type="submit"/>
+                </div>
+            </div>
+        </form>
+        <div class="form-container" id="form-result-container">
+
+        </div>
+    </div>
+    <div id="task2">
+        <div class="grid">
+            
+        </div>
+    </div>
+</body>
+</html>
