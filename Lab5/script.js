@@ -6,16 +6,23 @@ window.onload = function()
 }
 
 function fillGetResults() {
-    let element = document.getElementById("form-result-container");
-
     let params = getUrlAsRequest();
 
     let keys = Object.keys(params);
 
-    if (keys.length() == 0)
+    if (keys.length == 0)
     {
         return;
     }
+
+    let parent = document.getElementById("task1");
+
+    parent.innerHTML += `
+    <div class="form-container" id="form-result-container">
+
+    </div>`;
+
+    let element = document.getElementById("form-result-container");
 
     keys.forEach(key => {
         element.innerHTML += `
