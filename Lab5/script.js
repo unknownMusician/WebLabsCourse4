@@ -53,7 +53,6 @@ function findAndFillGrid() {
 }
 
 function fillGrid(element) {
-
     for (let i = 0; i < 6; i++) {
         let row = '<div class="row">';
 
@@ -84,15 +83,21 @@ function subscribeMyTile(element) {
         element.style.color = getRandomColor();
     })
 
+    element.addEventListener('click', e => {
+        element.style.backgroundColor = document.getElementById("color-picker").value;
+    })
+
     // todo: palette
+    document.getElementById("color-picker").value
 
     element.addEventListener('dblclick', e => {
         let tiles = document.querySelectorAll(".tile.other");
 
+        let color = document.getElementById("color-picker").value;
+
         for (let i = 0; i < tiles.length; i++) {
             let tile = tiles.item(i);
-            tile.style.backgroundColor = getRandomColor();
-            tile.style.color = getRandomColor();
+            tile.style.backgroundColor = color;
         }
     })
 }
